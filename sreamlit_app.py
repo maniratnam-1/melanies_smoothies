@@ -42,7 +42,7 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
 
 #st.write(my_insert_stmt)
-st.stop()
+#st.stop()
     
 
 #    if ingredients_string:
