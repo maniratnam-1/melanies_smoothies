@@ -41,8 +41,8 @@ if ingredients_list:
     if time_to_insert:
         session.sql(my_insert_stmt).collect()
 
-#st.write(my_insert_stmt)
-#st.stop()
+st.write(my_insert_stmt)
+st.stop()
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
