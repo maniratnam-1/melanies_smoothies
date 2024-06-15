@@ -11,14 +11,6 @@ st.write(
     [docs.streamlit.io](https://docs.streamlit.io).
     """
 )
-
-#option = st.selectbox(
-# "What fruits you choose",
-#    ("apple", "banana", "Mango"))
-
-#st.write("You selected:", option)
-
-
 cnx= st.connection("snowflake")
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select (col("FRUIT_NAME"))
